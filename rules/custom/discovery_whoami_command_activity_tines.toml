@@ -13,7 +13,7 @@ false_positives = [
     Some normal use of this program
     """,
 ]
-from = "now-9m"
+from = "now-540s"
 index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*", "logs-system.*"]
 language = "eql"
 license = "Elastic License v2"
@@ -70,6 +70,7 @@ severity = "low"
 tags = ["Elastic", "Host", "Windows", "Threat Detection", "Discovery"]
 timestamp_override = "event.ingested"
 type = "eql"
+interal = "6m"
 
 query = '''
 process where event.type in ("start", "process_started") and process.name : "whoami"
