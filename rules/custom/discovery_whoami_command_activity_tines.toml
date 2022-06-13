@@ -70,7 +70,7 @@ severity = "low"
 tags = ["Elastic", "Host", "Windows", "Threat Detection", "Discovery"]
 timestamp_override = "event.ingested"
 type = "eql"
-interal = "6m"
+interval = "6m"
 
 query = '''
 process where event.type in ("start", "process_started") and process.name : "whoami" and host.name != "vanilla.local"
@@ -97,4 +97,3 @@ action_type_id = ".webhook"
 
 [rule.actions.params]
 body = "[{{#context.alerts}}{{{.}}},{{/context.alerts}}{\"placeholder\": \"data\"}]"
-
