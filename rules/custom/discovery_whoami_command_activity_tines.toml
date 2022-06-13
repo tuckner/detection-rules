@@ -14,7 +14,7 @@ false_positives = [
     """,
 ]
 from = "now-9m"
-index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*", "logs-system.*", "logs-*"]
+index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*", "logs-system.*"]
 language = "eql"
 license = "Elastic License v2"
 name = "Whoami Process Activity Custom Tines Update"
