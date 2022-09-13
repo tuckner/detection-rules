@@ -73,7 +73,7 @@ type = "eql"
 interval = "6m"
 
 query = '''
-process where event.type in ("start", "process_started") and process.name : "whoami" and host.name != "vanilla.local"
+process where event.type in ("start", "process_started") and process.name : "whoami"
 '''
 
 
