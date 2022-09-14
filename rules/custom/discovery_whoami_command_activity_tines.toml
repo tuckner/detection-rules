@@ -92,7 +92,7 @@ reference = "https://attack.mitre.org/tactics/TA0007/"
 
 [[rule.actions]]
 group = "default"
-id = "dbe0b780-eaaa-11ec-bb58-63e02260f1f3"
+id = "72bc2890-33be-11ed-ae27-d5d2a8d1690a"
 action_type_id = ".webhook"
 
 [rule.actions.params]
