@@ -17,7 +17,7 @@ from = "now-540s"
 index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*", "logs-system.*"]
 language = "eql"
 license = "Elastic License v2"
-name = "Whoami Process Activity Custom Tines Update"
+name = "Whoami Process Activity Custom Tines Refresh"
 note = """## Triage and analysis
 
 ### Investigating Whoami Process Activity
