@@ -22,7 +22,7 @@ def create_rules(createbody, kbnuser,kbnpwd):
     for response in resp.json():
         failure = False
         try:
-            if response["statusCode"] in range(400, 599):
+            if response["error"]["status_code"] in range(400, 599):
                 response["statusCode"]
                 print(resp.json())
                 print("=====================================================================")
