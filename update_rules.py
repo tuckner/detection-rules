@@ -90,11 +90,4 @@ for rule_resp in resp.json():
     except TypeError:
         print(rule_resp)
 
-created = False
-while not created:
-    try:
-        create_rules(createbody, kbnuser, kbnpwd)
-    except Exception:
-        pass
-    else:
-        created = True
+create_rules(createbody, kbnuser, kbnpwd)
